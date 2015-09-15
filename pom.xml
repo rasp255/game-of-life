@@ -28,13 +28,13 @@
     </scm>
 	<distributionManagement>
 		<repository>
-			<id>rtt-test-releases-ci</id>
-			<name>RTT Test Releases CI</name>
+			<id>GOF_RELEASES</id>
+			<name>Game Of Life Releases</name>
 			<url>http://localhost:8081/nexus/content/repositories/GOF_RELEASES/</url>
 		</repository>
 		<snapshotRepository>
-			<id>rtt-test-snaphots-ci</id>
-			<name>RTT Test Snapshots CI</name>
+			<id>GOF_SNAPSHOTS</id>
+			<name>Game Of Life Snapshots</name>
 			<url>http://localhost:8081/nexus/content/repositories/GOF_SNAPSHOTS/</url>
 		</snapshotRepository>
 	</distributionManagement>
