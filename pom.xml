@@ -138,7 +138,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5</version>
                 <configuration>
-					<preperationGoals>clean install</preparationGoals>
+					<skip>true</skip>
                 </configuration>
 			<!--edited-->
             </plugin>
