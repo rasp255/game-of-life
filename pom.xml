@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.wakaleo.gameoflife</groupId>
     <artifactId>gameoflife</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>pom</packaging>
     <name>gameoflife</name>
     <url>https://github.com/wakaleo/game-of-life</url>
     <properties>
-        <build.number>SNAPSHOT</build.number>
+        <build.number>1.0</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <easyb.version>1.4</easyb.version>
         <cobertura.version>2.6</cobertura.version>
@@ -132,17 +132,20 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
+			
 			<!--edited-->
+            <plugin>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5</version>
                 <configuration>
 					<skip>true</skip>
                 </configuration>
-			<!--edited-->
             </plugin>
-
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>versions-maven-plugin</artifactId>
+				<version>2.2</version>
+			</plugin>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.8.2</version>
@@ -150,7 +153,7 @@
 					<skip>true</skip>
 				</configuration>
             </plugin>
-
+			<!--edited-->
 
             <plugin>
                 <groupId>org.easyb</groupId>
@@ -187,7 +190,15 @@
         </plugins>
 
         <pluginManagement>
+		<!--edited-->
+			  <plugins>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>versions-maven-plugin</artifactId>
+					<version>2.2</version>
+				</plugin>
             <plugins>
+		<!--edited-->
                 <plugin>
                     <groupId>org.easyb</groupId>
                     <artifactId>maven-easyb-plugin</artifactId>
