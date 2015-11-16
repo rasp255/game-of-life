@@ -6,7 +6,9 @@
     <version>1.0</version>
     <packaging>pom</packaging>
     <name>gameoflife</name>
+	<!--
     <url>https://github.com/wakaleo/game-of-life</url>
+	-->
     <properties>
         <build.number>1.0</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,12 +22,17 @@
         <jelastic.context>gameoflife</jelastic.context>
         <jelastic.environment>wakaleo</jelastic.environment>
     </properties>
-
+	
+	<!-- SCM commented out
+	
     <scm>
         <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
         <developerConnection>scm:git:git@github.com:${github.account}/game-of-life.git</developerConnection>
         <url>scm:git:git@github.com:${github.account}/game-of-life.git</url>
     </scm>
+	
+	-->
+	
 	<!--edited-->
 	<distributionManagement>
 		<repository>
@@ -138,7 +145,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5</version>
                 <configuration>
-					<skip>true</skip>
+					<!--  <skip>true</skip  -->
                 </configuration>
             </plugin>
 			<plugin>
