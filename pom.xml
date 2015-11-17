@@ -18,7 +18,8 @@
 		<sonar.projectName>Game of Life Maven</sonar.projectName>
 		<sonar.projectVersion>1.0</sonar.projectVersion>
  
-        <!-- A workaround for a bug in PMD -->
+        <!-- A workaround for a bug in PMD 
+		-->
         <sourceJdk>1.7</sourceJdk>
         <targetJdk>1.7</targetJdk>
         <github.account>wakaleo</github.account>
