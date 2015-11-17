@@ -14,6 +14,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <easyb.version>1.4</easyb.version>
         <cobertura.version>2.6</cobertura.version>
+		<sonar.projectKey=my:project2<sonar.projectKey</sonar.projectKey>
+		<sonar.projectName>Game of Life Maven</sonar.projectName>
+		<sonar.projectVersion>1.0<sonar.projectVersion>
+ 
         <!-- A workaround for a bug in PMD -->
         <sourceJdk>1.7</sourceJdk>
         <targetJdk>1.7</targetJdk>
